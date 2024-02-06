@@ -9,7 +9,7 @@ function adminMiddleware(req, res, next) {
 
     Admin.findOne({
         username: username,
-        password: password
+        password: passwordS
     })
     .then(function(value) {
         if (value) {
